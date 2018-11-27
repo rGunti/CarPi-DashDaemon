@@ -128,7 +128,7 @@ class DashDaemon(Daemon):
         try:
             # Calculate Fuel Efficiency
             rpm = values[LIVE_INPUT_DATA_KEYS['car_rpm']]
-            map = LIVE_INPUT_DATA_KEYS['car_map']
+            map = values[LIVE_INPUT_DATA_KEYS['car_map']]
             in_tmp = values[LIVE_INPUT_DATA_KEYS['car_tmp']]
 
             vol_efficiency = config.read_int_value(CONFIG_KEYS['vol_efficency'], 85) / 100
