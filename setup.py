@@ -10,7 +10,7 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setup(name='carpi-dashdaemon',
-      version='0.1.1',
+      version='0.1.2',
       description='Daemon that processes data from different sources for a digital car dashboard.',
       long_description=long_description,
       url='https://github.com/rGunti/CarPi-DashDaemon',
@@ -28,7 +28,7 @@ setup(name='carpi-dashdaemon',
           'wheel',
           'carpi-commons',
           'carpi-redisdatabus',
-          'carpi-daemoncommons'
+          'carpi-daemoncommons',
           'carpi-gpsdaemon',
           'carpi-obddaemon',
       ],
