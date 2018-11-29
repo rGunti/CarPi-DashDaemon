@@ -34,7 +34,7 @@ def calculate_fuel_usage(rpm: int,
     assert 0.5 <= v_H <= 5
 
     imap = (rpm * map) / _to_kelvin(in_tmp)
-    maf = ((imap / 120) * v_E * v_H) / GAS_CONSTANT
+    maf = ((imap / 120) * v_E * v_H * AIR_MOL_MASS) / GAS_CONSTANT
 
     lps = (maf / 14.7) / p_F
     return lps * 3600
